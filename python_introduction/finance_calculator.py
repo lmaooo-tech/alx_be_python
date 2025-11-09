@@ -20,8 +20,8 @@ Display the user’s monthly savings.
 Display the projected annual savings after including interest.
 """
 #value of the variables 
-monthly_income = int(input( "whats your monthly income?:"))
-monthly_expenses = int(input("whats your monthly expenses?:"))
+monthly_income = int(input( "Enter your monthly income?:"))
+monthly_expenses = int(input("Enter your total monthly expenses?:"))
 
 #input values
 monthly_savings = monthly_income - monthly_expenses
