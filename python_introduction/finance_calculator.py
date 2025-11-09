@@ -19,13 +19,15 @@ Output Results:
 Display the user’s monthly savings.
 Display the projected annual savings after including interest.
 """
-#value of the variables 
-monthly_income = int(input( "Enter your monthly income?:"))
-monthly_expenses = int(input("Enter your total monthly expenses?:"))
+#prompt user for their variables
+monthly_income = int(input("Enter your monthly income:"))
+monthly_expenses = int(input("Enter your total monthly expenses:"))
 
-#input values
+#do the calculations
 monthly_savings = monthly_income - monthly_expenses
-annual_savings = monthly_savings * 12 + (monthly_savings * 12 * 0.05) #annual interest rate is 5% thats 0.05
+projected_savings = monthly_savings * 12  + (monthly_savings * 12 * 0.05 ) #given that annual interest rate is 5% that 0.05 
 
-print(f"your monthly savings are: {monthly_savings}")
-print(f"projected savings after one year, with interest is: {annual_savings}")
+#print the results
+
+print(f"Your monthly savings are:{monthly_savings}")
+print(f"Projected savings after one year, with interest, is:{ projected_savings}")
