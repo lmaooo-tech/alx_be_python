@@ -20,7 +20,7 @@ Print the clothing recommendation based on the weather condition provided by the
 """
 
 #ask the user for input
-weather= input("what`s the weather like today?  (sunny/rainy/cold):")
+weather= input("What's the weather like today? (sunny/rainy/cold):")
  
  #recommend dresscode for user
 
