@@ -17,23 +17,24 @@ Provide a Customized Reminder:
 Print a reminder about the task that includes its priority level and whether immediate action is required based on time sensitivity.
 A message should be ‘that requires immediate attention today!’
 """
-#Ask for user input
-task = str(input("Enter your task:"))
-priority = str(input("Priority (high/medium/low):"))
-time_bound = str(input("Is it time-bound? (yes/no):"))
+# Ask for user input
+task = input("Enter your task: ")
+priority = input("Priority (high/medium/low): ")
+time_bound = input("Is it time-bound? (yes/no): ")
 
-#process the task based on priority and time
+# Process the task based on priority
 match priority:
-	case "high":
-		reminder = f"Task: {task} is a HIGH priority task"
-	case "medium":
-		reminder = f"Task: {task} is a MEDIUM priority task"
-	case "low":
-		reminder = f"Task: {task} is a LOW priority task"
-	case _:
-		reminder = f"Task: {task} has an unknown priority"
+    case "high":
+        reminder = f"Task: {task} is a HIGH priority task"
+    case "medium":
+        reminder = f"Task: {task} is a MEDIUM priority task"
+    case "low":
+        reminder = f"Task: {task} is a LOW priority task"
+    case _:
+        reminder = f"Task: {task} has an unknown priority"
 
-if time_bound.lower() == "yes":
-	reminder += " that requires immediate attention today!"
+# Check if time-bound
+if time_bound == "yes":
+    reminder += " that requires immediate attention today!"
 
 print(reminder)
